@@ -2,8 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: 'Source Sans Pro';
 }
 
 :root {
@@ -13,7 +12,7 @@
 .container {
     position: relative;
     height: 100vh;
-   
+
 }
 
 .row {
@@ -40,36 +39,31 @@
 
 }
 
-.item-header span {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 37px;
-    display: flex;
-    justify-content: center;
-  
-}
-
 .item-header-text {
-    padding: 31px 0px;
+    padding: 38px 0px 27.5px 0px;
     display: inline-block;
 
 }
 
-.item-header h1 {
+.item-header .item-header-text-main p {
+    font-family: 'Montserrat';
     color: var(--blue-color);
-    font-weight: 100;
+    font-weight: 400;
     font-size: 36px;
     line-height: 50px;
     letter-spacing: 1.8px;
     margin-bottom: 0px;
     text-transform: uppercase;
     text-align: center;
-    
+
 }
 
 .new::after {
     content: "New";
     text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
     line-height: 60px;
     background-image: url(./img/Rectangle\ 122.png);
     height: 60px;
@@ -77,20 +71,23 @@
     position: absolute;
     top: -30px;
     transform: translateX(-50%);
+    text-transform: uppercase;
 
 }
 
 
 .item-header p {
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 24px;
     color: #5F727F;
     margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
 }
 
-.item-header h4 {
-    color: #99A9B5;
-    margin-bottom: 0px;
+
+.item-header strong {
+    color: white;
 }
 
 /* .item-header:before {
@@ -107,25 +104,33 @@
     background-color: #393D50;
 }
 
-.list-subtitle h4 {
+.list-subtitle .list-subtitle-main p {
     font-size: 24px;
     line-height: 37px;
-    margin-top: 24.5px;
-    margin-bottom: 0px;
+    padding-top: 20.5px;
+    padding-bottom: 0px;
     color: var(--blue-color);
     font-weight: 400;
+    margin-bottom: 0px;
 }
 
-.list-subtitle p {
+.list-subtitle .list-subtitle-second p {
     font-size: 14px;
     line-height: 25px;
     color: #99A9B5;
-    
+    padding-bottom: 16.5px;
+    margin-bottom: 0px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .list-item {
     font-size: 14px;
     line-height: 60px;
+}
+
+.list-item ul {
+    margin-bottom: 0px;
 }
 
 .list-item li {
@@ -156,7 +161,7 @@
 }
 
 .button {
-    margin: 40px 48px;
+    padding: 40px 48px;
     font-weight: 700;
     font-size: 16px;
     line-height: 36px;
@@ -174,4 +179,11 @@ button {
     color: var(--blue-color);
     background: rgba(57, 61, 80, 0.0001);
     border: 2px solid #00BCD4;
+}
+
+button:hover {
+    background-color: var(--blue-color);
+    color: #ffffff;
+    transform: scale(1.1);
+
 }
