@@ -15,17 +15,6 @@
 
 }
 
-.row {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.col {
-    text-align: center;
-}
-
 .item {
     border: 1px solid #000000;
 }
@@ -127,10 +116,6 @@
 .list-item {
     font-size: 14px;
     line-height: 60px;
-}
-
-.list-item ul {
-    margin-bottom: 0px;
 }
 
 .list-item li {
