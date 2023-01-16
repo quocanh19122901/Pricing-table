@@ -29,7 +29,7 @@
     padding: 26px;
 }
 
-.col:nth-child(3) {
+.col-3{
     margin-top: -24px;
 }
 .item-header {
