@@ -1,10 +1,6 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
     font-family: 'Source Sans Pro';
 }
-
 :root {
     --blue-color: #00BCD4;
 }
@@ -109,10 +105,6 @@
 .list-item li:nth-child(odd) {
     background-color: #F4F6F7;
 }
-.del {
-    text-decoration-line: line-through;
-    color: #99A9B5 !important;
-} 
 .button {
     padding: 40px 48px;
     font-weight: 700;
@@ -139,7 +131,7 @@ button:hover {
     cursor: pointer;
     transition: .3s ;
 }
-@media only screen and (max-width: 1254px) {
+@media (max-width: 1254px) {
     .col {
         transition: .3s ;
         padding: 13px;
@@ -150,7 +142,7 @@ button:hover {
     }
 }  
 /* 1 collunm */
-@media only screen and (max-width: 995px) {
+@media (max-width: 995px) {
     .row{
         display: inline-block;
         width: 100%;
@@ -164,7 +156,7 @@ button:hover {
     }
 }
 /* xs size */
-@media only screen and (max-width: 385px)
+@media (max-width: 385px)
 {
     .item li {
         padding: 0px 35px;
