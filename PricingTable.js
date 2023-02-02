@@ -1,10 +1,11 @@
-var slideIndex = 0;
-var currentIndex = 0;
+let slideIndex = 0;
+let currentIndex = 0;
 currentIndex = slideIndex;
-var prevBtn = document.querySelector(".prev");
-var nextBtn = document.querySelector(".next");
-var slides = document.querySelectorAll(".col");
-var dot = document.querySelectorAll(".dot");
+let prevBtn = document.querySelector(".prev");
+let nextBtn = document.querySelector(".next");
+let slides = document.querySelectorAll(".col");
+let dot = document.querySelectorAll(".dot");
+const auto_time = 5000;
 
 nextBtn.addEventListener("click", () => {
   if (slideIndex >= slides.length - 1) {
@@ -12,7 +13,6 @@ nextBtn.addEventListener("click", () => {
   } else {
     slideIndex++;
   }
-  // console.log(slideIndex);
   makeSlideshow(currentIndex);
 });
 
@@ -41,19 +41,11 @@ function makeSlideshow() {
 }
 function makeSlideshowauto() {
   // console.log(`${slideIndex} auto `);
-  let i;
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex].style.display = "block";
-  for (i = 0; i < dot.length; i++) {
-    dot[i].className = dot[i].className.replace(" active", "");
-  }
-  dot[slideIndex].className += " active";
+  makeSlideshow();
   slideIndex++;
   if (slideIndex > slides.length - 1) {
     slideIndex = 0;
   }
-  setTimeout(makeSlideshowauto, 5000);
 }
-makeSlideshowauto(slideIndex);
+setInterval(makeSlideshowauto, auto_time);
+makeSlideshow(slideIndex);
