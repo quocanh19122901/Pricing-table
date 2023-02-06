@@ -184,6 +184,10 @@ button:hover {
 
 }
 
+.d-none {
+    display: none !important;
+}
+
 .active,
 .dot:hover {
     background-color: #717171;
