@@ -12,9 +12,6 @@ nextBtn.addEventListener("click", () => {
     slideIndex++;
   }
   makeSlideshow(slideIndex);
-  dot.forEach((dots) => {
-    dots.className = dots.className.replace("", "");
-  });
 });
 
 prevBtn.addEventListener("click", () => {
@@ -37,7 +34,6 @@ function makeSlideshow(index) {
   dot[index].className += " active";
 }
 function makeSlideshowauto() {
-  // console.log(`${slideIndex} auto `);
   makeSlideshow(slideIndex);
   slideIndex++;
   if (slideIndex > slides.length - 1) {
